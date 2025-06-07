@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react"; // Added useRef, useEffect
 import NearByAttractions from "./components/nearByAttractions";
 import aboutImg from "../../assets/about.png";
+import mapImg from "../../assets/map.png";
 import { gsap } from "gsap"; // Import gsap
 
 const About = () => {
@@ -54,24 +55,16 @@ const About = () => {
             }`}
           >
             <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.6!2d80.6445!3d7.2906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae366266498acd3%3A0x411a3818a1e2039e!2sThe%20Cloud%20Hanthana!5e0!3m2!1sen!2slk!4v1638360000000!5m2!1sen!2slk"
-                width="100%"
-                height="400"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-96"
-              ></iframe>
-              <div className="p-4 bg-gray-700">
+              <img
+                src={mapImg}
+                alt="The Cloud Hanthana Location Map"
+                className="w-full h-96 object-cover"
+              />
+              {/* <div className="p-4 bg-gray-700">
                 <div className="flex items-center text-sm text-gray-300">
-                  <span className="bg-white text-gray-900 px-2 py-1 rounded mr-2">
-                    10 min
-                  </span>
-                  <span>from Kandy • The Cloud Hanthana</span>
+                  <span>The Cloud Hanthana</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

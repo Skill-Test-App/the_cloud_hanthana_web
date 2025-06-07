@@ -3,6 +3,7 @@ import facebookIcon from "../assets/icons/facebook-box-line.svg";
 import instagramIcon from "../assets/icons/instagram-line.svg";
 import youtubeIcon from "../assets/icons/youtube-line.svg";
 import tiktokIcon from "../assets/icons/tiktok-fill.svg";
+import mapImg from "../assets/map.png";
 
 function Footer() {
   const [email, setEmail] = useState("");
@@ -31,17 +32,11 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-10">
           {/* Map Section */}
           <div className="w-full md:col-span-1">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.6565!2d80.6248!3d7.2553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae366266498acd3%3A0x411a3818a1e2c3f8!2sCloud%20Hanthana!5e0!3m2!1sen!2slk!4v1635000000000!5m2!1sen!2slk"
-              width="100%"
-              height="320"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="rounded-lg shadow-md"
-              title="Cloud Hanthana Location"
-            ></iframe>
+            <img
+              src={mapImg}
+              alt="The Cloud Hanthana Location Map"
+              className="w-full h-80 object-cover rounded-lg shadow-md"
+            />
           </div>
 
           {/* Explore Section */}
@@ -255,7 +250,8 @@ function Footer() {
               verticalAlign: "middle",
             }}
           >
-            &copy; 2025 The Cloud Hanthana. All rights reserved.
+            &copy; {new Date().getFullYear()} The Cloud Hanthana. All rights
+            reserved.
           </p>
         </div>
       </div>
