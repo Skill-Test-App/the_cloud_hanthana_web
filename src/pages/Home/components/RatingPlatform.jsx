@@ -15,7 +15,7 @@ const RatingPlatform = ({ platform, rating, maxRating, url }) => {
         style={{
           fontFamily: "Inter",
           fontWeight: 900,
-          fontSize: "28px",
+          fontSize: "2rem",
           lineHeight: "100%",
           letterSpacing: "0%",
         }}
@@ -24,7 +24,7 @@ const RatingPlatform = ({ platform, rating, maxRating, url }) => {
         <img
           src={starIcon}
           alt="star"
-          className="w-6 h-6"
+          className="w-8 h-8"
           style={{ filter: "brightness(0) saturate(100%) invert(100%)" }}
         />
       </div>
@@ -33,7 +33,7 @@ const RatingPlatform = ({ platform, rating, maxRating, url }) => {
         style={{
           fontFamily: "Inter",
           fontWeight: 400,
-          fontSize: "24px",
+          fontSize: "2rem",
           lineHeight: "100%",
           letterSpacing: "0%",
         }}

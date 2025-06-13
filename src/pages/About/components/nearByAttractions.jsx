@@ -73,9 +73,9 @@ const NearByAttractions = () => {
   };
 
   const getImageWidth = (index) => {
-    if (hoveredIndex === null) return "280px"; // Default width when no hover
-    if (hoveredIndex === index) return "573px"; // Expanded width for hovered image
-    return "200px"; // Reduced width for non-hovered images
+    if (hoveredIndex === null) return "20rem"; // Default width when no hover
+    if (hoveredIndex === index) return "36rem"; // Expanded width for hovered image
+    return "20rem"; // Reduced width for non-hovered images
   };
 
   const currentData = attractionsData[activeTab];
@@ -110,19 +110,19 @@ const NearByAttractions = () => {
       style={{ backgroundColor: "#1F2125" }}
       id="NearByAttractions-section"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className=" mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+          <h2 className="text-6xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             We Have Everything
           </h2>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+          <h2 className="text-6xl md:text-5xl lg:text-6xl font-bold text-white">
             You Need
           </h2>
         </div>
 
         {/* Navigation Tabs */}
-        <div className="flex flex-wrap justify-center gap-8 mb-12">
+        <div className="flex flex-wrap justify-center gap-26 mb-12">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -132,7 +132,7 @@ const NearByAttractions = () => {
                   setTimeout(() => setActiveTab(tab), 150);
                 }
               }}
-              className={`relative text-lg md:text-xl font-medium transition-all duration-300 pb-2 transform hover:scale-105 ${
+              className={`relative text-4xl  font-medium transition-all duration-300 pb-2 transform hover:scale-105 ${
                 activeTab === tab
                   ? "text-white"
                   : "text-gray-400 hover:text-gray-200"
@@ -164,7 +164,7 @@ const NearByAttractions = () => {
               }`}
               style={{
                 width: getImageWidth(0),
-                height: "600px",
+                height: "36rem",
                 transitionDelay: isTransitioning ? "0ms" : "50ms",
               }}
               onMouseEnter={() => setHoveredIndex(0)}
@@ -217,7 +217,7 @@ const NearByAttractions = () => {
               }`}
               style={{
                 width: getImageWidth(1),
-                height: "600px",
+                height: "36rem",
                 transitionDelay: isTransitioning ? "0ms" : "100ms",
               }}
               onMouseEnter={() => setHoveredIndex(1)}
@@ -251,7 +251,7 @@ const NearByAttractions = () => {
               }`}
               style={{
                 width: getImageWidth(2),
-                height: "600px",
+                height: "36rem",
                 transitionDelay: isTransitioning ? "0ms" : "150ms",
               }}
               onMouseEnter={() => setHoveredIndex(2)}
@@ -285,7 +285,7 @@ const NearByAttractions = () => {
               }`}
               style={{
                 width: getImageWidth(3),
-                height: "600px",
+                height: "36rem",
                 transitionDelay: isTransitioning ? "0ms" : "200ms",
               }}
               onMouseEnter={() => setHoveredIndex(3)}
@@ -321,7 +321,7 @@ const NearByAttractions = () => {
             <img
               src={arrowLeftIcon}
               alt="Previous"
-              className="w-5 h-5 filter brightness-0 invert"
+              className="w-15 h-15 filter brightness-0 invert"
             />
           </button>
           <button
@@ -334,7 +334,7 @@ const NearByAttractions = () => {
             <img
               src={arrowRightIcon}
               alt="Next"
-              className="w-5 h-5 filter brightness-0 invert"
+              className="w-15 h-15 filter brightness-0 invert"
             />
           </button>
           {/* Tab indicators */}

@@ -114,14 +114,14 @@ const WeatherInfo = () => {
         <img
           src={weatherIconSrc}
           alt="weather"
-          className="w-10 h-10 filter brightness-0 invert"
+          className="w-12 h-12 filter brightness-0 invert"
         />
         <div className="text-sm">
           <div
             style={{
               fontFamily: "Inter",
               fontWeight: 300,
-              fontSize: "20px",
+              fontSize: "1.25rem",
               lineHeight: "100%",
               letterSpacing: "0%",
             }}
@@ -132,7 +132,7 @@ const WeatherInfo = () => {
             style={{
               fontFamily: "Inter",
               fontWeight: 500,
-              fontSize: "26px",
+              fontSize: "1.625rem",
               lineHeight: "100%",
               letterSpacing: "0%",
             }}
@@ -145,7 +145,7 @@ const WeatherInfo = () => {
         <img
           src={tempIcon}
           alt="temperature"
-          className="w-10 h-10"
+          className="w-12 h-12"
           style={{ filter: "brightness(0) saturate(100%) invert(100%)" }}
         />
         <span
@@ -153,7 +153,7 @@ const WeatherInfo = () => {
           style={{
             fontFamily: "Inter",
             fontWeight: 600,
-            fontSize: "32px",
+            fontSize: "2rem",
             lineHeight: "100%",
             letterSpacing: "0%",
           }}

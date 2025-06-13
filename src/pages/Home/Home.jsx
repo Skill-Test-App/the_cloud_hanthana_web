@@ -25,7 +25,7 @@ const Home = () => {
       {/* 3. Content Layer (z-20) */}
       <div className="absolute inset-0 z-20 flex flex-col">
         {/* Weather Info - Centered below navbar */}
-        <div className="pt-[110px] w-full flex justify-center items-center p-4">
+        <div className="pt-27.5 w-full flex justify-center items-center p-4">
           <WeatherInfo />
         </div>
 
@@ -34,11 +34,11 @@ const Home = () => {
           {/* Hero Text */}
           <div className="mb-12">
             <h2
-              className="text-white/90 text-3xl font-light mb-6"
+              className="text-white/90 mb-6"
               style={{
                 fontFamily: "Inter",
                 fontWeight: 300,
-                fontSize: "60px",
+                fontSize: "4rem",
                 lineHeight: "100%",
                 letterSpacing: "0%",
               }}
@@ -50,7 +50,7 @@ const Home = () => {
               style={{
                 fontFamily: "Krona One",
                 fontWeight: 400,
-                fontSize: "80px",
+                fontSize: "5.5rem",
                 lineHeight: "100%",
                 letterSpacing: "0%",
               }}
@@ -62,7 +62,7 @@ const Home = () => {
               style={{
                 fontFamily: "Inter",
                 fontWeight: 300,
-                fontSize: "24px",
+                fontSize: "1.5rem",
                 lineHeight: "100%",
                 letterSpacing: "0%",
               }}
@@ -72,7 +72,7 @@ const Home = () => {
 
             {/* Book Now Button */}
             <button
-              className="bg-white/10 hover:bg-white hover:text-[#1F2125] transition-all duration-300 border-2 border-white/60 hover:border-white text-white rounded-lg text-lg font-medium flex items-center justify-center space-x-3 mx-auto backdrop-blur-sm w-[380px] h-[60px] group"
+              className="bg-white/10 hover:bg-white hover:text-[#1F2125] transition-all duration-300 border-2 border-white/60 hover:border-white text-white rounded-lg text-lg font-medium flex items-center justify-center space-x-3 mx-auto backdrop-blur-sm w-96 h-18 group"
               style={{
                 boxShadow: "0px 4px 4px 0px #00000040",
               }}
@@ -86,7 +86,7 @@ const Home = () => {
                 style={{
                   fontFamily: "Inter",
                   fontWeight: 400,
-                  fontSize: "28px",
+                  fontSize: "1.75rem",
                   lineHeight: "100%",
                   letterSpacing: "0%",
                 }}

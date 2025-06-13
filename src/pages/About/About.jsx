@@ -34,8 +34,8 @@ const About = () => {
       className="min-h-screen text-white p-8 relative" // Added 'relative'
       style={{ backgroundColor: "#1F2125" }}
     >
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl font-bold text-center mb-16">
+      <div className="mx-auto px-17">
+        <h1 className="text-6xl font-bold text-center mb-16">
           About The Cloud Hanthana
         </h1>
 
@@ -58,7 +58,7 @@ const About = () => {
               <img
                 src={mapImg}
                 alt="The Cloud Hanthana Location Map"
-                className="w-full h-96 object-cover"
+                className="w-full h-166 object-cover"
               />
               {/* <div className="p-4 bg-gray-700">
                 <div className="flex items-center text-sm text-gray-300">
@@ -76,8 +76,8 @@ const About = () => {
                 style={{
                   fontFamily: "Lora",
                   fontWeight: 400,
-                  fontSize: "28px",
-                  lineHeight: "50px",
+                  fontSize: "2rem",
+                  lineHeight: "3.75rem",
                   letterSpacing: "0%",
                   textAlign: "justify",
                   verticalAlign: "middle",
@@ -86,11 +86,10 @@ const About = () => {
                 <span
                   style={{
                     fontFamily: "Lora",
-                    fontSize: "80px",
+                    fontSize: "5rem",
                     fontWeight: 400,
                     float: "left",
                     marginRight: "8px",
-                    lineHeight: "50px",
                   }}
                 >
                   W
@@ -114,8 +113,8 @@ const About = () => {
                     style={{
                       fontFamily: "Lora",
                       fontWeight: 400,
-                      fontSize: "28px",
-                      lineHeight: "50px",
+                      fontSize: "2rem",
+                      lineHeight: "3.75rem",
                       letterSpacing: "0%",
                       textAlign: "justify",
                       verticalAlign: "middle",
@@ -136,8 +135,8 @@ const About = () => {
                     style={{
                       fontFamily: "Lora",
                       fontWeight: 400,
-                      fontSize: "28px",
-                      lineHeight: "50px",
+                      fontSize: "2rem",
+                      lineHeight: "3.75rem",
                       letterSpacing: "0%",
                       textAlign: "justify",
                       verticalAlign: "middle",
@@ -159,8 +158,8 @@ const About = () => {
                     style={{
                       fontFamily: "Lora",
                       fontWeight: 400,
-                      fontSize: "28px",
-                      lineHeight: "50px",
+                      fontSize: "2rem",
+                      lineHeight: "3.75rem",
                       letterSpacing: "0%",
                       textAlign: "justify",
                       verticalAlign: "middle",
@@ -180,14 +179,14 @@ const About = () => {
               )}
 
               {/* Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <button className="px-8 py-3 bg-transparent border border-gray-500 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300">
+              <div className="flex flex-col sm:flex-row gap-10 mt-8 ">
+                <button className="text-3xl px-8 py-3 bg-transparent border border-gray-500 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300 min-w-[calc(100%/2-1.25rem)] min-h-22">
                   View Map
                 </button>
 
                 <button
                   onClick={toggleExpanded}
-                  className="px-8 py-3 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors duration-300 font-medium"
+                  className="text-3xl px-8 py-3 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors duration-300 font-medium min-w-[calc(100%/2-1.25rem)] min-h-22"
                 >
                   {isExpanded ? "Show Less" : "Learn More About"}
                 </button>
