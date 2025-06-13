@@ -7,21 +7,21 @@ const ImgDescription = ({ title, driveTime, distance }) => {
     <div
       className="text-white px-8 py-6 bg-gray-900"
       style={{
-        height: "100px",
+        height: "6.25rem",
         backgroundColor: "#1F2125",
         opacity: 0.8,
         position: "relative",
         zIndex: 10,
       }}
     >
-      <div className="max-w-7xl mx-auto h-full flex flex-col justify-center items-start">
+      <div className="mx-auto h-full flex flex-col justify-center items-start">
         {/* Title at the top */}
         <h2
           className="text-white"
           style={{
             fontFamily: "Lora",
             fontWeight: 600,
-            fontSize: "28px",
+            fontSize: "2rem",
             lineHeight: "100%",
             letterSpacing: "0%",
             textAlign: "left",
@@ -36,14 +36,23 @@ const ImgDescription = ({ title, driveTime, distance }) => {
             <img
               src={roadsterIcon}
               alt="Car"
-              className="w-6 h-6 filter brightness-0 invert"
+              className="w-8 h-8 filter brightness-0 invert"
             />
-            <span className="font-light text-white">
+            <span
+              className=" text-white"
+              style={{
+                fontFamily: "Inter",
+                fontWeight: 300,
+                fontSize: "1.5rem",
+                lineHeight: "100%",
+                letterSpacing: "0%",
+              }}
+            >
               <span
                 style={{
                   fontFamily: "Inter",
                   fontWeight: 700,
-                  fontSize: "20px",
+                  fontSize: "1.5rem",
                   lineHeight: "100%",
                   letterSpacing: "0%",
                 }}
@@ -54,8 +63,8 @@ const ImgDescription = ({ title, driveTime, distance }) => {
               <span
                 style={{
                   fontFamily: "Inter",
-                  fontWeight: 700,
-                  fontSize: "20px",
+                  fontWeight: 600,
+                  fontSize: "1.5rem",
                   lineHeight: "100%",
                   letterSpacing: "0%",
                 }}
@@ -66,12 +75,12 @@ const ImgDescription = ({ title, driveTime, distance }) => {
           </div>
 
           {/* Right Side - Explore Button */}
-          <button className="flex items-center space-x-3 font-medium hover:text-gray-300 transition-colors duration-300 group">
+          <button className="flex items-center space-x-3 hover:text-gray-300 transition-colors duration-300 group">
             <span
               style={{
                 fontFamily: "Inter",
                 fontWeight: 500,
-                fontSize: "20px",
+                fontSize: "1.5rem",
                 lineHeight: "100%",
                 letterSpacing: "0%",
               }}
@@ -81,7 +90,7 @@ const ImgDescription = ({ title, driveTime, distance }) => {
             <img
               src={arrowRightIcon}
               alt="Arrow Right"
-              className="w-6 h-6 filter brightness-0 invert group-hover:translate-x-1 transition-transform duration-300"
+              className="w-8 h-8 filter brightness-0 invert group-hover:translate-x-1 transition-transform duration-300"
             />
           </button>
         </div>

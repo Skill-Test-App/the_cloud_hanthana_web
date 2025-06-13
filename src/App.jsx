@@ -6,16 +6,13 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
-      <div className="galleryblur"></div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/rooms" element={<Rooms />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/rooms" element={<Rooms />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

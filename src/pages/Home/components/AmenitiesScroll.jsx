@@ -15,7 +15,7 @@ const AmenitiesScroll = () => {
   ];
 
   return (
-    <div className="mt-12 max-w-4xl mx-auto overflow-hidden">
+    <div className="mt-13 max-w-242 mx-auto overflow-hidden">
       <div className="flex animate-scroll whitespace-nowrap">
         <div className="flex items-center space-x-12 text-white/70">
           {/* Duplicate amenities for seamless loop */}
@@ -24,14 +24,14 @@ const AmenitiesScroll = () => {
               <img
                 src={amenity.icon}
                 alt={amenity.name}
-                className="w-6 h-6"
+                className="w-8 h-8"
                 style={{ filter: "brightness(0) saturate(100%) invert(100%)" }}
               />
               <span
                 style={{
                   fontFamily: "Inter",
                   fontWeight: 300,
-                  fontSize: "28px",
+                  fontSize: "2rem",
                   lineHeight: "100%",
                   letterSpacing: "0%",
                 }}

@@ -154,28 +154,30 @@ const BookingForm = () => {
             setShowCheckInPicker(!showCheckInPicker);
             setShowCheckOutPicker(false);
           }}
-          className="backdrop-blur-sm hover:bg-white/20 transition-all duration-300 rounded-lg p-4 border border-transparent text-white min-w-[200px]"
+          className="backdrop-blur-sm hover:bg-white/20 transition-all duration-300 rounded-lg px-11 py-2.5 border border-transparent text-white min-w-88"
           style={{
             backgroundColor: "#D9D9D90D",
             boxShadow: "0px 0px 20px 2px #00000040",
             borderRadius: "10px",
           }}
         >
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2">
             <img
               src={calendarIcon}
               alt="Calendar"
-              className="w-8 h-8 filter brightness-0 invert flex-shrink-0"
+              className="w-12 h-12 filter brightness-0 invert flex-shrink-0"
             />
             <div className="flex flex-col justify-center text-left">
-              <div className="text-sm opacity-80 text-left">Check in date:</div>
+              <div className="text-2xl opacity-80 text-left">
+                Check in date:
+              </div>
               <div className="text-lg font-medium text-left">
                 <span
                   className="text-white/70"
                   style={{
                     fontFamily: "Inter",
                     fontWeight: 700,
-                    fontSize: "32px",
+                    fontSize: "2rem",
                     lineHeight: "100%",
                     letterSpacing: "0%",
                   }}
@@ -187,7 +189,7 @@ const BookingForm = () => {
                   style={{
                     fontFamily: "Inter",
                     fontWeight: 400,
-                    fontSize: "24px",
+                    fontSize: "1.5rem",
                     lineHeight: "100%",
                     letterSpacing: "0%",
                   }}
@@ -236,7 +238,7 @@ const BookingForm = () => {
             setShowCheckOutPicker(!showCheckOutPicker);
             setShowCheckInPicker(false);
           }}
-          className="backdrop-blur-sm hover:bg-white/20 transition-all duration-300 rounded-lg p-4 border border-transparent text-white min-w-[200px]"
+          className="backdrop-blur-sm hover:bg-white/20 transition-all duration-300 rounded-lg px-11 py-2.5 border border-transparent text-white min-w-88"
           style={{
             backgroundColor: "#D9D9D90D",
             boxShadow: "0px 0px 20px 2px #00000040",
@@ -247,10 +249,10 @@ const BookingForm = () => {
             <img
               src={calendarIcon}
               alt="Calendar"
-              className="w-8 h-8 filter brightness-0 invert flex-shrink-0"
+              className="w-12 h-12 filter brightness-0 invert flex-shrink-0"
             />
             <div className="flex flex-col justify-center text-left">
-              <div className="text-sm opacity-80 text-left">
+              <div className="text-2xl opacity-80 text-left">
                 Check out date:
               </div>
               <div className="text-lg font-medium text-left">
@@ -259,7 +261,7 @@ const BookingForm = () => {
                   style={{
                     fontFamily: "Inter",
                     fontWeight: 700,
-                    fontSize: "32px",
+                    fontSize: "2rem",
                     lineHeight: "100%",
                     letterSpacing: "0%",
                   }}
@@ -271,7 +273,7 @@ const BookingForm = () => {
                   style={{
                     fontFamily: "Inter",
                     fontWeight: 400,
-                    fontSize: "24px",
+                    fontSize: "1.5rem",
                     lineHeight: "100%",
                     letterSpacing: "0%",
                   }}
@@ -286,7 +288,7 @@ const BookingForm = () => {
         {/* Check-out Date Picker */}
         {showCheckOutPicker && (
           <div
-            className="absolute bottom-full mb-2 left-0 z-50 backdrop-blur-sm rounded-lg p-4 border border-white/30"
+            className="absolute bottom-full mb-2 left-0 z-50 backdrop-blur-sm rounded-lg px-11 py-2.5  border border-white/30"
             style={{
               backgroundColor: "#1F2125CC",
               boxShadow: "0px 4px 20px 0px #00000040",
@@ -322,7 +324,7 @@ const BookingForm = () => {
             setShowCheckInPicker(false);
             setShowCheckOutPicker(false);
           }}
-          className="backdrop-blur-sm hover:bg-white/20 transition-all duration-300 rounded-lg p-4 border border-transparent text-white min-w-[200px]"
+          className="backdrop-blur-sm hover:bg-white/20 transition-all duration-300 rounded-lg px-11 py-2.5  border border-transparent text-white min-w-70"
           style={{
             backgroundColor: "#D9D9D90D",
             boxShadow: "0px 0px 20px 2px #00000040",
@@ -333,10 +335,10 @@ const BookingForm = () => {
             <img
               src={usersIcon}
               alt="Users"
-              className="w-8 h-8 filter brightness-0 invert flex-shrink-0"
+              className="w-12 h-12 filter brightness-0 invert flex-shrink-0"
             />
             <div className="flex flex-col justify-center text-left">
-              <div className="text-sm opacity-80 text-left">Guest:</div>
+              <div className="text-2xl opacity-80 text-left">Guest:</div>
               <div className="text-lg font-medium text-left">
                 <span>
                   <span
@@ -344,7 +346,7 @@ const BookingForm = () => {
                     style={{
                       fontFamily: "Inter",
                       fontWeight: 700,
-                      fontSize: "32px",
+                      fontSize: "2rem",
                       lineHeight: "100%",
                       letterSpacing: "0%",
                     }}
@@ -357,7 +359,7 @@ const BookingForm = () => {
                   style={{
                     fontFamily: "Inter",
                     fontWeight: 400,
-                    fontSize: "24px",
+                    fontSize: "1.5rem",
                     lineHeight: "100%",
                     letterSpacing: "0%",
                   }}
@@ -372,13 +374,13 @@ const BookingForm = () => {
         {/* Guest Picker */}
         {showGuestPicker && (
           <div
-            className="absolute bottom-full mb-2 left-0 z-50 backdrop-blur-sm rounded-lg p-4 border border-white/30"
+            className="absolute bottom-full mb-2 left-0 z-50 backdrop-blur-sm rounded-lg px-11 py-2.5  border border-white/30 min-w-84"
             style={{
               backgroundColor: "#1F2125CC",
               boxShadow: "0px 4px 20px 0px #00000040",
             }}
           >
-            <div className="text-white text-center mb-3 font-medium">
+            <div className="text-white text-center mb-3 font-medium text-4xl">
               Select Guests
             </div>
             <div className="grid grid-cols-4 gap-2">
@@ -414,7 +416,7 @@ const BookingForm = () => {
           style={{
             fontFamily: "Inter",
             fontWeight: 700,
-            fontSize: "24px",
+            fontSize: "1.5rem",
             lineHeight: "100%",
             letterSpacing: "0%",
           }}

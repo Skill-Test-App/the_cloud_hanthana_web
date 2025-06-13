@@ -143,14 +143,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 h-[70px]"
+      className="fixed top-0 left-0 right-0 z-50 h-20"
       style={{
         background: "#1F212505 2%",
         backdropFilter: "blur(100px)",
         border: "1px solid #FFFFFF66 40%",
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 py-8 h-full">
+      <div className="mx-auto px-28 py-8 h-full">
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
           <div
@@ -158,7 +158,7 @@ const Navbar = () => {
             style={{
               fontFamily: "Krona One",
               fontWeight: 400,
-              fontSize: "20px",
+              fontSize: "1.5rem",
               lineHeight: "100%",
               letterSpacing: "0%",
             }}
@@ -178,7 +178,7 @@ const Navbar = () => {
                 style={{
                   fontFamily: "Inter",
                   fontWeight: 500,
-                  fontSize: "20px",
+                  fontSize: "1.5rem",
                   lineHeight: "100%",
                   letterSpacing: "0%",
                 }}
@@ -188,7 +188,7 @@ const Navbar = () => {
                   <div
                     className="absolute left-0 right-0 h-0.5 bg-white rounded-full"
                     style={{
-                      bottom: "-17px",
+                      bottom: "-1rem",
                       boxShadow: "0px 0px 10px 0px #FFFFFF",
                     }}
                   ></div>
@@ -209,7 +209,7 @@ const Navbar = () => {
               style={{
                 fontFamily: "Inter",
                 fontWeight: 500,
-                fontSize: "20px",
+                fontSize: "1.5rem",
                 lineHeight: "100%",
                 letterSpacing: "0%",
               }}
@@ -220,8 +220,8 @@ const Navbar = () => {
               <div
                 className="absolute left-1/2 transform -translate-x-1/2 h-0.5 bg-white rounded-full"
                 style={{
-                  bottom: "-17px",
-                  width: "60px",
+                  bottom: "-1rem",
+                  width: "3.5rem",
                   boxShadow: "0px 0px 10px 0px #FFFFFF",
                 }}
               ></div>
