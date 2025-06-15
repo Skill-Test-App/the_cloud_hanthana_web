@@ -47,7 +47,7 @@ function Footer() {
                 style={{
                   fontFamily: "Inter",
                   fontWeight: 700,
-                  fontSize: "28px",
+                  fontSize: "1.75rem",
                   lineHeight: "150%",
                   letterSpacing: "0%",
                   verticalAlign: "middle",
@@ -60,7 +60,7 @@ function Footer() {
                 style={{
                   fontFamily: "Inter",
                   fontWeight: 400,
-                  fontSize: "16px",
+                  fontSize: "1rem",
                   lineHeight: "250%",
                   letterSpacing: "0%",
                   verticalAlign: "middle",
@@ -107,7 +107,7 @@ function Footer() {
               style={{
                 fontFamily: "Inter",
                 fontWeight: 700,
-                fontSize: "28px",
+                fontSize: "1.75rem",
                 lineHeight: "150%",
                 letterSpacing: "0%",
                 verticalAlign: "middle",
@@ -119,7 +119,7 @@ function Footer() {
               style={{
                 fontFamily: "Inter",
                 fontWeight: 400,
-                fontSize: "16px",
+                fontSize: "1rem",
                 lineHeight: "150%",
                 letterSpacing: "0%",
                 verticalAlign: "middle",
@@ -151,7 +151,7 @@ function Footer() {
               style={{
                 fontFamily: "Inter",
                 fontWeight: 800,
-                fontSize: "28px",
+                fontSize: "1.75rem",
                 lineHeight: "150%",
                 letterSpacing: "0%",
                 verticalAlign: "middle",
@@ -182,7 +182,7 @@ function Footer() {
                 style={{
                   fontFamily: "Inter",
                   fontWeight: 700,
-                  fontSize: "20px",
+                  fontSize: "1.25rem",
                   lineHeight: "150%",
                   letterSpacing: "0%",
                   verticalAlign: "middle",
