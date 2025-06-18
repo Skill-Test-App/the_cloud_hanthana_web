@@ -35,5 +35,7 @@
     "globals": "^16.0.0",
     "vite": "^6.3.5"
   },
-  "homepage": "https://github.com/Skill-Test-App/the_cloud_hanthana_web"
+  "engines": {
+    "node": ">=20.0.0"
+  }
 }
